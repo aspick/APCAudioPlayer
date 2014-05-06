@@ -1,0 +1,60 @@
+.apc-button{
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	border-radius: 17px;
+	background-color: white;
+	position: relative;
+	cursor: pointer;
+	vertical-align: middle;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.apc-button:hover:after{
+	opacity: 0.8;
+}
+.apc-button:after{
+	content : "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+	background-position: center center;
+    width: 100%;
+    height: 100%;
+    opacity : 0.3;
+    /*z-index: -1;*/
+}
+.apc-button.hidden{
+	display: none;
+}
+
+.apc-play-button:after{
+	background-image: url(images/glyphicons_173_play.png);
+}
+.apc-back-button:after{
+	background-image: url(images/glyphicons_170_step_backward.png);
+}
+.apc-pause-button:after{
+	background-image: url(images/glyphicons_174_pause.png);
+}
+.apc-repeat-button:after{
+	background-image: url(images/glyphicons_174_pause.png);
+}
+
+.apc-time-field{
+	margin-top: 2px;
+	margin-left: 10px;
+	display: inline-block;
+	font-family: sans-serif;
+	vertical-align: middle;
+	color: #333;
+}
+
+.apc-player{
+	height:34px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-align: center;
+}

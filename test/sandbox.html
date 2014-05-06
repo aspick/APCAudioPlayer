@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>sandbox</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="../APCAudioPlayer.js"></script>
+	<script type="text/javascript">
+$(function(){
+	var audioPlayer = new AudioPlayer($("#audio-src"),$('#player'));
+	audioPlayer.build();
+});
+	</script>
+	<link rel="stylesheet" type="text/css" href="../APCAudioPlayer.css">
+	<link rel="stylesheet" type="text/css" href="sandbox.css">
+</head>
+<body>
+	<div id="player" class="apc-player" style="width:500px;background-color:#ccc;"></div>
+	<audio src="audio/audio1.mp3" id="audio-src"></audio>
+
+</body>
+</html>
